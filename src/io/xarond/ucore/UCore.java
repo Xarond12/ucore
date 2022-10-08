@@ -1,4 +1,4 @@
-package io.anuke.ucore;
+package io.xarond.ucore;
 
 import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
@@ -8,9 +8,9 @@ import com.badlogic.gdx.utils.reflect.ClassReflection;
 import com.badlogic.gdx.utils.reflect.Field;
 import com.badlogic.gdx.utils.reflect.Method;
 import com.badlogic.gdx.utils.reflect.ReflectionException;
-import io.anuke.ucore.core.Timers;
-import io.anuke.ucore.function.Callable;
-import io.anuke.ucore.util.Log;
+import io.xarond.ucore.core.Timers;
+import io.xarond.ucore.function.Callable;
+import io.xarond.ucore.util.Log;
 
 public class UCore{
 	private static Logger logger;

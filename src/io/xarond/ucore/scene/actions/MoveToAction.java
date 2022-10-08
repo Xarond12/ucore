@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
 import com.badlogic.gdx.utils.Align;
 

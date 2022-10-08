@@ -1,7 +1,7 @@
-package io.anuke.ucore.util;
+package io.xarond.ucore.util;
 
 import com.badlogic.gdx.utils.reflect.ClassReflection;
-import io.anuke.ucore.core.Timers;
+import io.xarond.ucore.core.Timers;
 
 public class Strings{
 

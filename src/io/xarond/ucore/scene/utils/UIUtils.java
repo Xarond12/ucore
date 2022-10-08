@@ -1,10 +1,10 @@
 
-package io.anuke.ucore.scene.utils;
+package io.xarond.ucore.scene.utils;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Buttons;
 import com.badlogic.gdx.Input.Keys;
-import io.anuke.ucore.util.OS;
+import io.xarond.ucore.util.OS;
 
 public class UIUtils {
 

@@ -1,7 +1,7 @@
-package io.anuke.ucore.entities;
+package io.xarond.ucore.entities;
 
 import com.badlogic.gdx.math.Vector2;
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.util.Mathf;
 
 public abstract class Entity{
 	private static int lastid;

@@ -1,11 +1,11 @@
-package io.anuke.ucore.graphics;
+package io.xarond.ucore.graphics;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 
-import static io.anuke.ucore.core.Core.batch;
+import static io.xarond.ucore.core.Core.batch;
 
 public class Lines {
     private static TextureRegion blankregion = Pixmaps.blankTextureRegion();

@@ -1,6 +1,6 @@
-package io.anuke.ucore.entities;
+package io.xarond.ucore.entities;
 
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.util.Mathf;
 
 public abstract class DestructibleEntity extends SolidEntity{
 	public transient int maxhealth;

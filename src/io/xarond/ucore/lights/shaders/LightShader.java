@@ -1,9 +1,9 @@
-package io.anuke.ucore.lights.shaders;
+package io.xarond.ucore.lights.shaders;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 
-import io.anuke.ucore.lights.RayHandler;
+import io.xarond.ucore.lights.RayHandler;
 
 public final class LightShader {
 	static final public ShaderProgram createLightShader() {

@@ -14,11 +14,11 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
 import com.badlogic.gdx.graphics.Color;
 
-import io.anuke.ucore.scene.Element;
+import io.xarond.ucore.scene.Element;
 
 /** Sets the alpha for an actor's color (or a specified color), from the current alpha to the new alpha. Note this action
  * transitions from the alpha at the time the action starts to the specified alpha.

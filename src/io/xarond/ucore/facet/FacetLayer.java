@@ -1,10 +1,10 @@
-package io.anuke.ucore.facet;
+package io.xarond.ucore.facet;
 
 import com.badlogic.gdx.math.MathUtils;
 
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.core.Graphics;
-import io.anuke.ucore.graphics.Surface;
+import io.xarond.ucore.core.Core;
+import io.xarond.ucore.core.Graphics;
+import io.xarond.ucore.graphics.Surface;
 
 public abstract class FacetLayer{
 	public final String name;

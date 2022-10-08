@@ -1,4 +1,4 @@
-package io.anuke.ucore.function;
+package io.xarond.ucore.function;
 
 public interface StringProcessor{
 	public String get(int i);

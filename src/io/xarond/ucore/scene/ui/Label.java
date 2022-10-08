@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.ui;
+package io.xarond.ucore.scene.ui;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
@@ -25,14 +25,14 @@ import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.StringBuilder;
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.function.StringSupplier;
-import io.anuke.ucore.scene.Element;
-import io.anuke.ucore.scene.style.Drawable;
-import io.anuke.ucore.util.Bundles;
+import io.xarond.ucore.core.Core;
+import io.xarond.ucore.function.StringSupplier;
+import io.xarond.ucore.scene.Element;
+import io.xarond.ucore.scene.style.Drawable;
+import io.xarond.ucore.util.Bundles;
 
-import static io.anuke.ucore.core.Core.font;
-import static io.anuke.ucore.core.Core.skin;
+import static io.xarond.ucore.core.Core.font;
+import static io.xarond.ucore.core.Core.skin;
 
 /** A text label, with optional word wrapping.
  * <p>

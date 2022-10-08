@@ -1,6 +1,6 @@
-package io.anuke.ucore.util;
+package io.xarond.ucore.util;
 
-import io.anuke.ucore.core.Core;
+import io.xarond.ucore.core.Core;
 
 public class Bundles {
 

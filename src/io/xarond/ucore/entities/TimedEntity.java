@@ -1,7 +1,7 @@
-package io.anuke.ucore.entities;
+package io.xarond.ucore.entities;
 
-import io.anuke.ucore.core.Timers;
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.core.Timers;
+import io.xarond.ucore.util.Mathf;
 
 public abstract class TimedEntity extends Entity{
 	public float lifetime;

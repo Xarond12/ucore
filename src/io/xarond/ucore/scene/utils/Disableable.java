@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.utils;
+package io.xarond.ucore.scene.utils;
 
 public interface Disableable {
 	public void setDisabled (boolean isDisabled);

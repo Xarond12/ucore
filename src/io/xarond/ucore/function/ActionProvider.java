@@ -1,6 +1,6 @@
-package io.anuke.ucore.function;
+package io.xarond.ucore.function;
 
-import io.anuke.ucore.scene.Action;
+import io.xarond.ucore.scene.Action;
 
 public interface ActionProvider{
 	public Action get();

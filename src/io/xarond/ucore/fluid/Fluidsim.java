@@ -1,8 +1,8 @@
-package io.anuke.ucore.fluid;
+package io.xarond.ucore.fluid;
 
 import com.badlogic.gdx.math.MathUtils;
 
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.util.Mathf;
 
 public class Fluidsim{
 	public int iterations = 5;

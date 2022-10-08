@@ -1,4 +1,4 @@
-package io.anuke.ucore.noise;
+package io.xarond.ucore.noise;
 
 import java.util.Random;
 

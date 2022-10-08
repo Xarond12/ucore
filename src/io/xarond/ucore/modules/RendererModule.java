@@ -1,4 +1,4 @@
-package io.anuke.ucore.modules;
+package io.xarond.ucore.modules;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -9,17 +9,17 @@ import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.reflect.ClassReflection;
 import com.badlogic.gdx.utils.reflect.Method;
-import io.anuke.ucore.UCore;
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.core.Effects;
-import io.anuke.ucore.core.Graphics;
-import io.anuke.ucore.core.Settings;
-import io.anuke.ucore.graphics.Surface;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Tmp;
+import io.xarond.ucore.UCore;
+import io.xarond.ucore.core.Core;
+import io.xarond.ucore.core.Effects;
+import io.xarond.ucore.core.Graphics;
+import io.xarond.ucore.core.Settings;
+import io.xarond.ucore.graphics.Surface;
+import io.xarond.ucore.util.Mathf;
+import io.xarond.ucore.util.Tmp;
 
-import static io.anuke.ucore.core.Core.batch;
-import static io.anuke.ucore.core.Core.camera;
+import static io.xarond.ucore.core.Core.batch;
+import static io.xarond.ucore.core.Core.camera;
 
 public abstract class RendererModule extends Module{
 	public Color clearColor = Color.BLACK;
@@ -42,7 +42,7 @@ public abstract class RendererModule extends Module{
 		//set up recorder if possible; ignore if it doesn't work
 		//(to disable the recorder, just don't call record(), or remove GifRecorder from the classpath)
 		try{
-			recorderClass = ClassReflection.forName("io.anuke.gif.GifRecorder");
+			recorderClass = ClassReflection.forName("io.xarond.gif.GifRecorder");
 			recorder = ClassReflection.getConstructor(recorderClass, Batch.class).newInstance(new SpriteBatch());
 			if(UCore.isAssets()){
 				Method method = ClassReflection.getMethod(recorderClass, "setExportDirectory", FileHandle.class);

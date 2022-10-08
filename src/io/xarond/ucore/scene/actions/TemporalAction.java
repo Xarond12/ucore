@@ -14,12 +14,12 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.utils.Pool;
 
-import io.anuke.ucore.scene.Action;
+import io.xarond.ucore.scene.Action;
 
 /** Base class for actions that transition over time using the percent complete.
  * @author Nathan Sweet */

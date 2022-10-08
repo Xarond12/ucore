@@ -1,7 +1,7 @@
-package io.anuke.ucore.scene.builders;
+package io.xarond.ucore.scene.builders;
 
-import io.anuke.ucore.function.CheckListenable;
-import io.anuke.ucore.scene.ui.CheckBox;
+import io.xarond.ucore.function.CheckListenable;
+import io.xarond.ucore.scene.ui.CheckBox;
 
 public class checkbox extends builder<checkbox, CheckBox>{
 	

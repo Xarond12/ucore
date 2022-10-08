@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
 /** Multiplies the delta of an action.
  * @author Nathan Sweet */

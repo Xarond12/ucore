@@ -1,6 +1,6 @@
-package io.anuke.ucore.util;
+package io.xarond.ucore.util;
 
-import io.anuke.ucore.UCore;
+import io.xarond.ucore.UCore;
 
 public class OS {
     static public boolean isWindows = property("os.name").contains("Windows");

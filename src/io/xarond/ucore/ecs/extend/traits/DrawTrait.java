@@ -1,8 +1,8 @@
-package io.anuke.ucore.ecs.extend.traits;
+package io.xarond.ucore.ecs.extend.traits;
 
-import io.anuke.ucore.ecs.Spark;
-import io.anuke.ucore.ecs.Trait;
-import io.anuke.ucore.function.Consumer;
+import io.xarond.ucore.ecs.Spark;
+import io.xarond.ucore.ecs.Trait;
+import io.xarond.ucore.function.Consumer;
 
 public class DrawTrait extends Trait{
 	public Consumer<Spark> drawer;

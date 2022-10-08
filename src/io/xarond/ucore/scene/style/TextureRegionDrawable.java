@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.style;
+package io.xarond.ucore.scene.style;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
@@ -23,7 +23,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasSprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
-import io.anuke.ucore.scene.ui.layout.Unit;
+import io.xarond.ucore.scene.ui.layout.Unit;
 
 /** Drawable for a {@link TextureRegion}.
  * @author Nathan Sweet */

@@ -14,9 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.ui;
+package io.xarond.ucore.scene.ui;
 
-import static io.anuke.ucore.core.Core.skin;
+import static io.xarond.ucore.core.Core.skin;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
@@ -24,8 +24,8 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Scaling;
 
-import io.anuke.ucore.scene.style.Drawable;
-import io.anuke.ucore.scene.ui.layout.Cell;
+import io.xarond.ucore.scene.style.Drawable;
+import io.xarond.ucore.scene.ui.layout.Cell;
 /** A checkbox is a button that contains an image indicating the checked or unchecked state and a label.
  * @author Nathan Sweet */
 public class CheckBox extends TextButton {

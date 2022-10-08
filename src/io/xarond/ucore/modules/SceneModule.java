@@ -1,4 +1,4 @@
-package io.anuke.ucore.modules;
+package io.xarond.ucore.modules;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -6,14 +6,14 @@ import com.badlogic.gdx.graphics.Colors;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.Array;
 
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.core.Inputs;
-import io.anuke.ucore.scene.Element;
-import io.anuke.ucore.scene.Scene;
-import io.anuke.ucore.scene.Skin;
-import io.anuke.ucore.scene.style.Drawable;
-import io.anuke.ucore.scene.ui.Dialog;
-import io.anuke.ucore.scene.ui.layout.Table;
+import io.xarond.ucore.core.Core;
+import io.xarond.ucore.core.Inputs;
+import io.xarond.ucore.scene.Element;
+import io.xarond.ucore.scene.Scene;
+import io.xarond.ucore.scene.Skin;
+import io.xarond.ucore.scene.style.Drawable;
+import io.xarond.ucore.scene.ui.Dialog;
+import io.xarond.ucore.scene.ui.layout.Table;
 
 public class SceneModule extends Module{
 	private static String[] colorTypes = {"accent", "title"};

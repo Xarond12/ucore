@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
 /** Moves an actor from its current size to a relative size.
  * @author Nathan Sweet */

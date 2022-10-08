@@ -1,11 +1,11 @@
-package io.anuke.ucore.util;
+package io.xarond.ucore.util;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.RandomXS128;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.ObjectMap;
-import io.anuke.ucore.core.Timers;
-import io.anuke.ucore.function.Consumer;
+import io.xarond.ucore.core.Timers;
+import io.xarond.ucore.function.Consumer;
 
 import java.util.Random;
 

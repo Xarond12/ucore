@@ -1,4 +1,4 @@
-package io.anuke.ucore.lights;
+package io.xarond.ucore.lights;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.*;
@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.VertexAttributes.Usage;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 
-import io.anuke.ucore.lights.shaders.*;
+import io.xarond.ucore.lights.shaders.*;
 
 class LightMap{
 	private ShaderProgram shadowShader;

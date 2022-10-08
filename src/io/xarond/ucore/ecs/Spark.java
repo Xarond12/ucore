@@ -1,9 +1,9 @@
-package io.anuke.ucore.ecs;
+package io.xarond.ucore.ecs;
 
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
 
-import io.anuke.ucore.ecs.extend.traits.*;
+import io.xarond.ucore.ecs.extend.traits.*;
 
 public class Spark{
 	private static int lastid;

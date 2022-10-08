@@ -1,4 +1,4 @@
-package io.anuke.ucore.scene.ui;
+package io.xarond.ucore.scene.ui;
 
 import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
@@ -11,23 +11,23 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectIntMap;
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.core.Inputs;
-import io.anuke.ucore.core.Inputs.Axis;
-import io.anuke.ucore.core.Inputs.ControllerType;
-import io.anuke.ucore.core.Inputs.DeviceType;
-import io.anuke.ucore.core.Inputs.InputDevice;
-import io.anuke.ucore.core.KeyBinds;
-import io.anuke.ucore.core.KeyBinds.Keybind;
-import io.anuke.ucore.core.Timers;
-import io.anuke.ucore.scene.event.InputEvent;
-import io.anuke.ucore.scene.event.InputListener;
-import io.anuke.ucore.scene.ui.layout.Stack;
-import io.anuke.ucore.scene.ui.layout.Table;
-import io.anuke.ucore.util.Bundles;
-import io.anuke.ucore.util.Input;
-import io.anuke.ucore.util.Input.Type;
-import io.anuke.ucore.util.Strings;
+import io.xarond.ucore.core.Core;
+import io.xarond.ucore.core.Inputs;
+import io.xarond.ucore.core.Inputs.Axis;
+import io.xarond.ucore.core.Inputs.ControllerType;
+import io.xarond.ucore.core.Inputs.DeviceType;
+import io.xarond.ucore.core.Inputs.InputDevice;
+import io.xarond.ucore.core.KeyBinds;
+import io.xarond.ucore.core.KeyBinds.Keybind;
+import io.xarond.ucore.core.Timers;
+import io.xarond.ucore.scene.event.InputEvent;
+import io.xarond.ucore.scene.event.InputListener;
+import io.xarond.ucore.scene.ui.layout.Stack;
+import io.xarond.ucore.scene.ui.layout.Table;
+import io.xarond.ucore.util.Bundles;
+import io.xarond.ucore.util.Input;
+import io.xarond.ucore.util.Input.Type;
+import io.xarond.ucore.util.Strings;
 
 public class KeybindDialog extends Dialog{
 	protected KeybindDialogStyle style;

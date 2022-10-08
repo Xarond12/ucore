@@ -1,14 +1,14 @@
-package io.anuke.ucore.core;
+package io.xarond.ucore.core;
 
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
 
 import com.badlogic.gdx.utils.OrderedMap;
-import io.anuke.ucore.core.Inputs.Axis;
-import io.anuke.ucore.core.Inputs.DeviceType;
-import io.anuke.ucore.core.Inputs.InputDevice;
-import io.anuke.ucore.util.Input;
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.core.Inputs.Axis;
+import io.xarond.ucore.core.Inputs.DeviceType;
+import io.xarond.ucore.core.Inputs.InputDevice;
+import io.xarond.ucore.util.Input;
+import io.xarond.ucore.util.Mathf;
 
 public class KeyBinds{
 	private static OrderedMap<String, Section> map = new OrderedMap<>();

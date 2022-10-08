@@ -1,8 +1,8 @@
-package io.anuke.ucore.ecs.extend.traits;
+package io.xarond.ucore.ecs.extend.traits;
 
-import io.anuke.ucore.core.Timers;
-import io.anuke.ucore.ecs.Spark;
-import io.anuke.ucore.ecs.Trait;
+import io.xarond.ucore.core.Timers;
+import io.xarond.ucore.ecs.Spark;
+import io.xarond.ucore.ecs.Trait;
 
 public class LifetimeTrait extends Trait{
 	public float lifetime;

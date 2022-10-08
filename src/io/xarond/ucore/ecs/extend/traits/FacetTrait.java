@@ -1,15 +1,15 @@
-package io.anuke.ucore.ecs.extend.traits;
+package io.xarond.ucore.ecs.extend.traits;
 
-import io.anuke.ucore.graphics.Draw;
-import io.anuke.ucore.ecs.Spark;
-import io.anuke.ucore.ecs.Trait;
-import io.anuke.ucore.facet.BaseFacet;
-import io.anuke.ucore.facet.BaseFacet.DrawFunc;
-import io.anuke.ucore.facet.FacetList;
-import io.anuke.ucore.facet.Sorter;
-import io.anuke.ucore.function.BiConsumer;
-import io.anuke.ucore.function.Listenable;
-import io.anuke.ucore.function.Supplier;
+import io.xarond.ucore.graphics.Draw;
+import io.xarond.ucore.ecs.Spark;
+import io.xarond.ucore.ecs.Trait;
+import io.xarond.ucore.facet.BaseFacet;
+import io.xarond.ucore.facet.BaseFacet.DrawFunc;
+import io.xarond.ucore.facet.FacetList;
+import io.xarond.ucore.facet.Sorter;
+import io.xarond.ucore.function.BiConsumer;
+import io.xarond.ucore.function.Listenable;
+import io.xarond.ucore.function.Supplier;
 
 
 public class FacetTrait extends Trait{

@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
 /** Sets the actor's scale from its current value to a specific value.
  * @author Nathan Sweet */

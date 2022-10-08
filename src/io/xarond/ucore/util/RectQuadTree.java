@@ -1,11 +1,11 @@
-package io.anuke.ucore.util;
+package io.xarond.ucore.util;
 
 import java.util.Iterator;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.utils.Array;
 
-import io.anuke.ucore.function.Consumer;
+import io.xarond.ucore.function.Consumer;
 
 /**
  * A basic quad tree.

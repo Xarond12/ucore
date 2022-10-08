@@ -1,4 +1,4 @@
-package io.anuke.ucore.function;
+package io.xarond.ucore.function;
 
 public interface IntPositionConsumer {
     void accept(int x, int y);

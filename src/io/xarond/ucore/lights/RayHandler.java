@@ -1,4 +1,4 @@
-package io.anuke.ucore.lights;
+package io.xarond.ucore.lights;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -14,12 +14,12 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
-import io.anuke.ucore.core.Timers;
-import io.anuke.ucore.lights.shaders.LightShader;
-import io.anuke.ucore.lights.shaders.PixelShader;
-import io.anuke.ucore.noise.Noise;
-import io.anuke.ucore.util.Physics;
-import io.anuke.ucore.util.RectQuadTree;
+import io.xarond.ucore.core.Timers;
+import io.xarond.ucore.lights.shaders.LightShader;
+import io.xarond.ucore.lights.shaders.PixelShader;
+import io.xarond.ucore.noise.Noise;
+import io.xarond.ucore.util.Physics;
+import io.xarond.ucore.util.RectQuadTree;
 
 /**
  * Handler that manages everything related to lights updating and rendering

@@ -1,17 +1,17 @@
-package io.anuke.ucore.core;
+package io.xarond.ucore.core;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 
-import io.anuke.ucore.ecs.Spark;
-import io.anuke.ucore.entities.EffectEntity;
-import io.anuke.ucore.entities.Entity;
-import io.anuke.ucore.function.BiConsumer;
-import io.anuke.ucore.function.EffectProvider;
-import io.anuke.ucore.function.EffectRenderer;
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.ecs.Spark;
+import io.xarond.ucore.entities.EffectEntity;
+import io.xarond.ucore.entities.Entity;
+import io.xarond.ucore.function.BiConsumer;
+import io.xarond.ucore.function.EffectProvider;
+import io.xarond.ucore.function.EffectRenderer;
+import io.xarond.ucore.util.Mathf;
 
 public class Effects{
 	private static Array<Effect> effects = new Array<>();

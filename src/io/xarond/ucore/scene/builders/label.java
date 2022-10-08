@@ -1,9 +1,9 @@
-package io.anuke.ucore.scene.builders;
+package io.xarond.ucore.scene.builders;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Colors;
 
-import io.anuke.ucore.function.StringSupplier;
-import io.anuke.ucore.scene.ui.Label;
+import io.xarond.ucore.function.StringSupplier;
+import io.xarond.ucore.scene.ui.Label;
 
 public class label extends builder<label, Label>{
 	

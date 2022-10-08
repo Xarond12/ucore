@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.anuke.ucore.jbump;
+package io.xarond.ucore.jbump;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.ObjectSet;
-import io.anuke.ucore.jbump.JBCollision.CollisionFilter;
+import io.xarond.ucore.jbump.JBCollision.CollisionFilter;
 
 import java.util.ArrayList;
 import java.util.HashMap;

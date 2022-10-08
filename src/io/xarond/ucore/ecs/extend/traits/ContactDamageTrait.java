@@ -1,9 +1,9 @@
-package io.anuke.ucore.ecs.extend.traits;
+package io.xarond.ucore.ecs.extend.traits;
 
-import io.anuke.ucore.ecs.Prototype;
-import io.anuke.ucore.ecs.Trait;
-import io.anuke.ucore.ecs.extend.Events.Collision;
-import io.anuke.ucore.ecs.extend.Events.Damaged;
+import io.xarond.ucore.ecs.Prototype;
+import io.xarond.ucore.ecs.Trait;
+import io.xarond.ucore.ecs.extend.Events.Collision;
+import io.xarond.ucore.ecs.extend.Events.Damaged;
 
 public class ContactDamageTrait extends Trait{
 	public int damage;

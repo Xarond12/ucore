@@ -1,4 +1,4 @@
-package io.anuke.ucore.noise;
+package io.xarond.ucore.noise;
 
 /*
  * Copyright (C) 2003, 2004 Jason Bevins (original libnoise code)

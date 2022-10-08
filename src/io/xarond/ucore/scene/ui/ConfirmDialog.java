@@ -1,6 +1,6 @@
-package io.anuke.ucore.scene.ui;
+package io.xarond.ucore.scene.ui;
 
-import io.anuke.ucore.function.Listenable;
+import io.xarond.ucore.function.Listenable;
 
 public class ConfirmDialog extends Dialog{
 	Listenable confirm;

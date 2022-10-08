@@ -1,13 +1,13 @@
-package io.anuke.ucore.entities;
+package io.xarond.ucore.entities;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.IntSet;
-import io.anuke.ucore.function.TileCollider;
-import io.anuke.ucore.function.TileHitboxProvider;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Physics;
-import io.anuke.ucore.util.QuadTree;
+import io.xarond.ucore.function.TileCollider;
+import io.xarond.ucore.function.TileHitboxProvider;
+import io.xarond.ucore.util.Mathf;
+import io.xarond.ucore.util.Physics;
+import io.xarond.ucore.util.QuadTree;
 
 public class EntityCollisions {
     //range for tile collision scanning

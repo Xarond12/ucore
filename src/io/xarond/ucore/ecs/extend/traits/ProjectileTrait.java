@@ -1,11 +1,11 @@
-package io.anuke.ucore.ecs.extend.traits;
+package io.xarond.ucore.ecs.extend.traits;
 
 import com.badlogic.gdx.math.Vector2;
 
-import io.anuke.ucore.core.Effects;
-import io.anuke.ucore.core.Effects.Effect;
-import io.anuke.ucore.ecs.*;
-import io.anuke.ucore.ecs.extend.Events.Collision;
+import io.xarond.ucore.core.Effects;
+import io.xarond.ucore.core.Effects.Effect;
+import io.xarond.ucore.ecs.*;
+import io.xarond.ucore.ecs.extend.Events.Collision;
 
 @Require({VelocityTrait.class, PosTrait.class, ColliderTrait.class, ContactDamageTrait.class, LifetimeTrait.class})
 public class ProjectileTrait extends Trait{

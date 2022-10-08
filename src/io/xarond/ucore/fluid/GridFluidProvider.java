@@ -1,6 +1,6 @@
-package io.anuke.ucore.fluid;
+package io.xarond.ucore.fluid;
 
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.util.Mathf;
 
 public class GridFluidProvider implements FluidProvider{
 	private final int width, height;

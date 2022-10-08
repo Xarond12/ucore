@@ -1,4 +1,4 @@
-package io.anuke.ucore.facet;
+package io.xarond.ucore.facet;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Sprite;
@@ -6,9 +6,9 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.graphics.Draw;
-import io.anuke.ucore.util.Atlas;
+import io.xarond.ucore.core.Core;
+import io.xarond.ucore.graphics.Draw;
+import io.xarond.ucore.util.Atlas;
 
 public class SpriteFacet extends Facet{
 	public Sprite sprite;

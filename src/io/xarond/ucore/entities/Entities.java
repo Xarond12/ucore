@@ -1,13 +1,13 @@
-package io.anuke.ucore.entities;
+package io.xarond.ucore.entities;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.IntMap;
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.function.Consumer;
-import io.anuke.ucore.function.Predicate;
+import io.xarond.ucore.core.Core;
+import io.xarond.ucore.function.Consumer;
+import io.xarond.ucore.function.Predicate;
 
 public class Entities{
 	public static final Object entityLock = new Object();

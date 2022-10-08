@@ -1,16 +1,16 @@
-package io.anuke.ucore.scene.ui;
+package io.xarond.ucore.scene.ui;
 
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.utils.Array;
 
-import io.anuke.ucore.core.Musics;
-import io.anuke.ucore.core.Settings;
-import io.anuke.ucore.core.Sounds;
-import io.anuke.ucore.function.Consumer;
-import io.anuke.ucore.function.Listenable;
-import io.anuke.ucore.function.StringProcessor;
-import io.anuke.ucore.scene.ui.layout.Table;
-import io.anuke.ucore.util.Bundles;
+import io.xarond.ucore.core.Musics;
+import io.xarond.ucore.core.Settings;
+import io.xarond.ucore.core.Sounds;
+import io.xarond.ucore.function.Consumer;
+import io.xarond.ucore.function.Listenable;
+import io.xarond.ucore.function.StringProcessor;
+import io.xarond.ucore.scene.ui.layout.Table;
+import io.xarond.ucore.util.Bundles;
 
 public class SettingsDialog extends Dialog{
 	public SettingsTable main;

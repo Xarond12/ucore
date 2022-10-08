@@ -1,7 +1,7 @@
-package io.anuke.ucore.ecs.extend.traits;
+package io.xarond.ucore.ecs.extend.traits;
 
-import io.anuke.ucore.ecs.Require;
-import io.anuke.ucore.ecs.Trait;
+import io.xarond.ucore.ecs.Require;
+import io.xarond.ucore.ecs.Trait;
 
 @Require(PosTrait.class)
 public class ColliderTrait extends Trait{

@@ -1,7 +1,7 @@
 
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
-import io.anuke.ucore.scene.event.Event;
+import io.xarond.ucore.scene.event.Event;
 
 /** An EventAction that is complete once it receives X number of events.
  * @author JavadocMD

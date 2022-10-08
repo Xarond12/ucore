@@ -1,12 +1,12 @@
-package io.anuke.ucore.core;
+package io.xarond.ucore.core;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.utils.I18NBundle;
-import io.anuke.ucore.scene.Scene;
-import io.anuke.ucore.scene.Skin;
-import io.anuke.ucore.util.Atlas;
+import io.xarond.ucore.scene.Scene;
+import io.xarond.ucore.scene.Skin;
+import io.xarond.ucore.util.Atlas;
 
 public class Core{
 	public static OrthographicCamera camera = new OrthographicCamera();

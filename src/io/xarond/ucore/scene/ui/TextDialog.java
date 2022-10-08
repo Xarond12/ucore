@@ -1,4 +1,4 @@
-package io.anuke.ucore.scene.ui;
+package io.xarond.ucore.scene.ui;
 
 public class TextDialog extends Dialog{
 	

@@ -1,8 +1,8 @@
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
 import com.badlogic.gdx.utils.Align;
 
-import io.anuke.ucore.scene.Action;
+import io.xarond.ucore.scene.Action;
 
 public class OriginAction extends Action{
 

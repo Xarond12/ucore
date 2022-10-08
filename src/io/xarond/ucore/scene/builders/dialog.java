@@ -1,10 +1,10 @@
-package io.anuke.ucore.scene.builders;
+package io.xarond.ucore.scene.builders;
 
-import io.anuke.ucore.scene.Element;
-import io.anuke.ucore.scene.ui.Dialog;
-import io.anuke.ucore.scene.ui.Label;
-import io.anuke.ucore.scene.ui.layout.Cell;
-import io.anuke.ucore.scene.ui.layout.Table;
+import io.xarond.ucore.scene.Element;
+import io.xarond.ucore.scene.ui.Dialog;
+import io.xarond.ucore.scene.ui.Label;
+import io.xarond.ucore.scene.ui.layout.Cell;
+import io.xarond.ucore.scene.ui.layout.Table;
 
 public class dialog extends builder<dialog, Dialog>{
 	Table previous = null;

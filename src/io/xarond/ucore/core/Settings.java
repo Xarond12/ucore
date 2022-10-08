@@ -1,11 +1,11 @@
-package io.anuke.ucore.core;
+package io.xarond.ucore.core;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.ObjectMap;
 
-import io.anuke.ucore.function.Listenable;
+import io.xarond.ucore.function.Listenable;
 
 public class Settings{
 	private static Preferences prefs;

@@ -14,10 +14,10 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.ui;
+package io.xarond.ucore.scene.ui;
 
 import static com.badlogic.gdx.math.Interpolation.fade;
-import static io.anuke.ucore.scene.actions.Actions.*;
+import static io.xarond.ucore.scene.actions.Actions.*;
 
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
@@ -26,7 +26,7 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.Timer.Task;
 
-import io.anuke.ucore.scene.Scene;
+import io.xarond.ucore.scene.Scene;
 
 /** Keeps track of an application's tooltips.
  * @author Nathan Sweet */

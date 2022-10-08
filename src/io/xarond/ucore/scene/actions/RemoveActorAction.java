@@ -14,9 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.actions;
+package io.xarond.ucore.scene.actions;
 
-import io.anuke.ucore.scene.Action;
+import io.xarond.ucore.scene.Action;
 
 /** Removes an actor from the stage.
  * @author Nathan Sweet */

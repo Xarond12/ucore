@@ -1,10 +1,10 @@
-package io.anuke.ucore.util;
+package io.xarond.ucore.util;
 
 import com.badlogic.gdx.math.*;
 import com.badlogic.gdx.utils.FloatArray;
 
-import io.anuke.ucore.function.PositionConsumer;
-import io.anuke.ucore.function.SegmentConsumer;
+import io.xarond.ucore.function.PositionConsumer;
+import io.xarond.ucore.function.SegmentConsumer;
 
 public class Geometry{
 	private final static FloatArray floatArray = new FloatArray();

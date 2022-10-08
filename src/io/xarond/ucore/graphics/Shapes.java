@@ -1,8 +1,8 @@
-package io.anuke.ucore.graphics;
+package io.xarond.ucore.graphics;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.util.Mathf;
 
 public class Shapes {
     private static Vector2 v = new Vector2();

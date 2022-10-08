@@ -1,11 +1,11 @@
-package io.anuke.ucore.modules;
+package io.xarond.ucore.modules;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.core.Graphics;
-import io.anuke.ucore.core.Inputs;
+import io.xarond.ucore.core.Core;
+import io.xarond.ucore.core.Graphics;
+import io.xarond.ucore.core.Inputs;
 
 public abstract class ModuleCore extends ApplicationAdapter{
 	private static ModuleCore instance;

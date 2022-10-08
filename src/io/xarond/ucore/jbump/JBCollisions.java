@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.anuke.ucore.jbump;
+package io.xarond.ucore.jbump;
 
 import com.badlogic.gdx.utils.BooleanArray;
 import com.badlogic.gdx.utils.FloatArray;
@@ -24,7 +24,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import static io.anuke.ucore.jbump.JBRectUtils.getSquareDistance;
+import static io.xarond.ucore.jbump.JBRectUtils.getSquareDistance;
 
 /**
  *

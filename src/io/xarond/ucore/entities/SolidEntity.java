@@ -1,7 +1,7 @@
-package io.anuke.ucore.entities;
+package io.xarond.ucore.entities;
 
 import com.badlogic.gdx.math.Rectangle;
-import io.anuke.ucore.util.QuadTree.QuadTreeObject;
+import io.xarond.ucore.util.QuadTree.QuadTreeObject;
 
 public abstract class SolidEntity extends Entity implements QuadTreeObject{
 	public transient Hitbox hitbox = new Hitbox(10f);

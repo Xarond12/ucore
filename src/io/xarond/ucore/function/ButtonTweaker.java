@@ -1,6 +1,6 @@
-package io.anuke.ucore.function;
+package io.xarond.ucore.function;
 
-import io.anuke.ucore.scene.ui.TextButton;
+import io.xarond.ucore.scene.ui.TextButton;
 
 public interface ButtonTweaker{
 	public void tweak(TextButton button);

@@ -14,9 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.ui;
+package io.xarond.ucore.scene.ui;
 
-import static io.anuke.ucore.core.Core.skin;
+import static io.xarond.ucore.core.Core.skin;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
@@ -25,13 +25,13 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.utils.Pools;
 
-import io.anuke.ucore.function.Consumer;
-import io.anuke.ucore.scene.Element;
-import io.anuke.ucore.scene.event.InputEvent;
-import io.anuke.ucore.scene.event.InputListener;
-import io.anuke.ucore.scene.style.Drawable;
-import io.anuke.ucore.scene.event.ChangeListener.ChangeEvent;
-import io.anuke.ucore.scene.event.HandCursorListener;
+import io.xarond.ucore.function.Consumer;
+import io.xarond.ucore.scene.Element;
+import io.xarond.ucore.scene.event.InputEvent;
+import io.xarond.ucore.scene.event.InputListener;
+import io.xarond.ucore.scene.style.Drawable;
+import io.xarond.ucore.scene.event.ChangeListener.ChangeEvent;
+import io.xarond.ucore.scene.event.HandCursorListener;
 /** A slider is a horizontal indicator that allows a user to set a value. The slider has a range (min, max) and a stepping between
  * each value the slider represents.
  * <p>

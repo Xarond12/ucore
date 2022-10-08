@@ -14,11 +14,11 @@
  * limitations under the License.
  ******************************************************************************/
 
-package io.anuke.ucore.scene.utils;
+package io.xarond.ucore.scene.utils;
 
 import com.badlogic.gdx.math.Rectangle;
 
-import io.anuke.ucore.scene.Group;
+import io.xarond.ucore.scene.Group;
 
 /** Allows a parent to set the area that is visible on a child actor to allow the child to cull when drawing itself. This must only
  * be used for actors that are not rotated or scaled.

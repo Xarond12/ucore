@@ -1,10 +1,10 @@
-package io.anuke.ucore.ecs.extend.traits;
+package io.xarond.ucore.ecs.extend.traits;
 
 import com.badlogic.gdx.math.Vector2;
 
-import io.anuke.ucore.ecs.Spark;
-import io.anuke.ucore.ecs.Trait;
-import io.anuke.ucore.util.Mathf;
+import io.xarond.ucore.ecs.Spark;
+import io.xarond.ucore.ecs.Trait;
+import io.xarond.ucore.util.Mathf;
 
 public class PosTrait extends Trait{
 	public float x, y;

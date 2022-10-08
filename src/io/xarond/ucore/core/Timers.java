@@ -1,12 +1,12 @@
-package io.anuke.ucore.core;
+package io.xarond.ucore.core;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.*;
 import com.badlogic.gdx.utils.Timer.Task;
 
-import io.anuke.ucore.function.Callable;
-import io.anuke.ucore.function.DelayRun;
-import io.anuke.ucore.function.Supplier;
+import io.xarond.ucore.function.Callable;
+import io.xarond.ucore.function.DelayRun;
+import io.xarond.ucore.function.Supplier;
 
 public class Timers{
     /**Time resets after 5 hours due to percision issues.*/
