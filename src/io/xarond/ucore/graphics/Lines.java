@@ -4,30 +4,32 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.utils.FloatArray;
-import io.anuke.ucore.util.Angles;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Translator;
 
 import static io.anuke.ucore.core.Core.batch;
 
-public class Lines{
+public class Lines {
+    private static TextureRegion blankregion = Pixmaps.blankTextureRegion();
     private static float stroke = 1f;
-    private static Vector2 vector = new Translator();
-    private static FloatArray floats = new FloatArray(100);
-    private static FloatArray floatBuilder = new FloatArray(100);
-    private static boolean building;
-    private static int circleVertices = 30;
+    private static Vector2 vector = new Vector2();
+    private static Vector2[] circle;
 
-    /** Set the vertices used for drawing a line circle. */
-    public static void setCircleVertices(int amount){
-        circleVertices = amount;
+    static{
+        setCircleVertices(30);
     }
 
-    public static void lineAngle(float x, float y, float angle, float length, CapStyle style){
-        vector.set(1, 1).setLength(length).setAngle(angle);
+    private static void setCircleVertices(Vector2[] vertices, int amount){
+        float step = 360f / amount;
+        vector.set(1f, 0);
+        for(int i = 0; i < amount; i++){
+            vector.setAngle(i * step);
+            vertices[i] = vector.cpy();
+        }
+    }
 
-        line(x, y, x + vector.x, y + vector.y, style);
+    /**Set the vertices used for drawing a line circle.*/
+    public static void setCircleVertices(int amount){
+        circle = new Vector2[amount];
+        setCircleVertices(circle, amount);
     }
 
     public static void lineAngle(float x, float y, float angle, float length){
@@ -57,12 +59,12 @@ public class Lines{
     }
 
     public static void line(float x, float y, float x2, float y2, CapStyle cap, float padding){
-        line(Draw.getBlankRegion(), x, y, x2, y2, cap, padding);
+        line(blankregion, x, y, x2, y2, cap, padding);
     }
 
     public static void line(TextureRegion blankregion, float x, float y, float x2, float y2, CapStyle cap, float padding){
-        float length = Vector2.dst(x, y, x2, y2) + (cap == CapStyle.none ? padding * 2f : stroke / 2 + (cap == CapStyle.round ? 0 : padding * 2));
-        float angle = Mathf.fastAtan2(y2 - y, x2 - x) * MathUtils.radDeg;
+        float length = Vector2.dst(x, y, x2, y2) + ( cap == CapStyle.none ? padding*2f : stroke / 2 + (cap == CapStyle.round ? 0 : padding*2));
+        float angle = ((float) Math.atan2(y2 - y, x2 - x) * MathUtils.radDeg);
 
         if(cap == CapStyle.square){
             batch.draw(blankregion, x - stroke / 2 - padding, y - stroke / 2, stroke / 2 + padding, stroke / 2, length, stroke, 1f, 1f, angle);
@@ -70,116 +72,31 @@ public class Lines{
             batch.draw(blankregion, x - padding, y - stroke / 2, padding, stroke / 2, length, stroke, 1f, 1f, angle);
         }else if(cap == CapStyle.round){
             //Padding does not apply here.
-            batch.draw(blankregion, x, y - stroke / 2, 0, stroke / 2, length - stroke / 2, stroke, 1f, 1f, angle);
-            Fill.circle(x, y, stroke / 2f);
-            Fill.circle(x2, y2, stroke / 2f);
+            batch.draw(blankregion, x, y - stroke / 2, 0, stroke / 2, length - stroke/2, stroke, 1f, 1f, angle);
+            Fill.circle(x, y, stroke/2f);
+            Fill.circle(x2, y2, stroke/2f);
         }
-    }
-
-    public static void linePoint(float x, float y){
-        if(!building) throw new IllegalStateException("Not building");
-        floatBuilder.add(x, y);
-    }
-
-    public static void beginLine(){
-        if(building) throw new IllegalStateException("Already building");
-        floatBuilder.clear();
-        building = true;
-    }
-
-    public static void endLine(){
-        if(!building) throw new IllegalStateException("Not building");
-        polyline(floatBuilder, false);
-        building = false;
-    }
-
-    public static void polyline(FloatArray points, boolean wrap){
-        polyline(points.items, points.size, wrap);
-    }
-
-    public static void polyline(float[] points, int length, boolean wrap){
-
-        if(length < 4) return;
-
-        float lasta;
-
-        {
-            float x1 = points[length-2];
-            float y1 = points[length-1];
-            float x2 = points[0];
-            float y2 = points[1];
-            float x3 = points[2];
-            float y3 = points[3];
-
-            if(wrap){
-                lasta = Mathf.slerp(Angles.angle(x1, y1, x2, y2), Angles.angle(x2, y2, x3, y3), 0.5f);
-            }else{
-                lasta = Angles.angle(x1, y1, x2, y2) + 180f;
-            }
-        }
-
-        for(int i = 0; i < (wrap ? length : length - 2); i+= 2){
-            float x1 = points[i];
-            float y1 = points[i+1];
-            float x2 = points[(i+2)%length];
-            float y2 = points[(i+3)%length];
-
-            float avg;
-            float ang1 = Angles.angle(x1, y1, x2, y2);
-
-            if(wrap){
-                float x3 = points[(i+4)%length];
-                float y3 = points[(i+5)%length];
-                float ang2 = Angles.angle(x2, y2, x3, y3);
-
-                avg = Mathf.slerp(ang1, ang2, 0.5f);
-            }else{
-                avg = ang1;
-            }
-
-            float s = stroke/2f;
-
-            float cos1 = MathUtils.cosDeg(lasta - 90) * s;
-            float sin1 = MathUtils.sinDeg(lasta - 90) * s;
-            float cos2 = MathUtils.cosDeg(avg - 90) * s;
-            float sin2 = MathUtils.sinDeg(avg - 90) * s;
-
-            float qx1 = x1 + cos1;
-            float qy1 = y1 + sin1;
-            float qx4 = x1 - cos1;
-            float qy4 = y1 - sin1;
-
-            float qx2 = x2 + cos2;
-            float qy2 = y2 + sin2;
-            float qx3 = x2 - cos2;
-            float qy3 = y2 - sin2;
-
-            Fill.quad(qx1, qy1, qx2, qy2, qx3, qy3, qx4, qy4);
-
-            lasta = avg;
-        }
-
     }
 
     public static void dashLine(float x1, float y1, float x2, float y2, int divisions){
         float dx = x2 - x1, dy = y2 - y1;
 
-        for(int i = 0; i < divisions; i++){
+        for(int i = 0; i < divisions; i ++){
             if(i % 2 == 0){
-                line(x1 + ((float) i / divisions) * dx, y1 + ((float) i / divisions) * dy,
-                        x1 + ((i + 1f) / divisions) * dx, y1 + ((i + 1f) / divisions) * dy);
+                line(x1 + ((float)i /divisions) * dx, y1 + ((float)i /divisions) * dy,
+                        x1 + ((i+1f) /divisions) * dx, y1 + ((i + 1f) /divisions) * dy);
             }
         }
     }
 
     public static void circle(float x, float y, float rad){
-        poly(x, y, circleVertices, rad);
+        poly(circle, x, y, rad);
     }
 
     public static void dashCircle(float x, float y, float radius){
         float scaleFactor = 0.6f;
-        int sides = 10 + (int) (radius * scaleFactor);
-        if(sides % 2 == 1) sides++;
+        int sides = 10 + (int)(radius*scaleFactor);
+        if(sides % 2 == 1) sides ++;
 
         vector.set(0, 0);
 
@@ -222,8 +139,6 @@ public class Lines{
             float y1 = vector.y;
 
             vector.set(radius, 0).setAngle(360f / sides * (i + 1) + angle + 90);
-
-
 
             line(x1 + x, y1 + y, vector.x + x, vector.y + y);
         }
@@ -270,6 +185,7 @@ public class Lines{
         float ddfx = tmp1x * pre4 + tmp2x * pre5;
         float ddfy = tmp1y * pre4 + tmp2y * pre5;
 
+        //needs more d
         float dddfx = tmp2x * pre5;
         float dddfy = tmp2y * pre5;
 
@@ -287,13 +203,13 @@ public class Lines{
         line(fx, fy, x2, y2);
     }
 
-    public static void swirl(float x, float y, float radius, float finion){
-        swirl(x, y, radius, finion, 0f);
+    public static void swirl(float x, float y, float radius, float fraction){
+        swirl(x, y, radius, fraction, 0f);
     }
 
-    public static void swirl(float x, float y, float radius, float finion, float angle){
+    public static void swirl(float x, float y, float radius, float fraction, float angle){
         int sides = 50;
-        int max = (int) (sides * (finion + 0.001f));
+        int max = (int) (sides * (fraction + 0.001f));
         vector.set(0, 0);
 
         for(int i = 0; i < max; i++){
@@ -308,13 +224,7 @@ public class Lines{
     }
 
     public static void poly(float x, float y, int sides, float radius){
-        floats.clear();
-        for(int i = 0; i < sides; i++){
-            float rad = (float)i /sides * MathUtils.PI2;
-            floats.add(MathUtils.cos(rad) * radius + x, MathUtils.sin(rad) * radius + y);
-        }
-
-        polyline(floats, true);
+        poly(x, y, sides, radius, 0);
     }
 
     public static void poly(Vector2[] vertices, float offsetx, float offsety, float scl){
@@ -322,6 +232,24 @@ public class Lines{
             Vector2 current = vertices[i];
             Vector2 next = i == vertices.length - 1 ? vertices[0] : vertices[i + 1];
             line(current.x * scl + offsetx, current.y * scl + offsety, next.x * scl + offsetx, next.y * scl + offsety);
+        }
+    }
+
+    public static void poly(float[] vertices, float offsetx, float offsety, float scl){
+        for(int i = 0; i < vertices.length / 2; i++){
+            float x = vertices[i * 2];
+            float y = vertices[i * 2 + 1];
+
+            float x2 = 0, y2 = 0;
+            if(i == vertices.length / 2 - 1){
+                x2 = vertices[0];
+                y2 = vertices[1];
+            }else{
+                x2 = vertices[i * 2 + 2];
+                y2 = vertices[i * 2 + 3];
+            }
+
+            line(x * scl + offsetx, y * scl + offsety, x2 * scl + offsetx, y2 * scl + offsety);
         }
     }
 
@@ -335,11 +263,11 @@ public class Lines{
         width += xspace * 2;
         height += yspace * 2;
 
-        batch.draw(Draw.getBlankRegion(), x, y, width, stroke);
-        batch.draw(Draw.getBlankRegion(), x, y + height, width, -stroke);
+        batch.draw(blankregion, x, y, width, stroke);
+        batch.draw(blankregion, x, y + height, width, -stroke);
 
-        batch.draw(Draw.getBlankRegion(), x + width, y, -stroke, height);
-        batch.draw(Draw.getBlankRegion(), x, y, stroke, height);
+        batch.draw(blankregion, x + width, y, -stroke, height);
+        batch.draw(blankregion, x, y, stroke, height);
     }
 
     public static void rect(float x, float y, float width, float height){
@@ -355,11 +283,7 @@ public class Lines{
     }
 
     public static void crect(float x, float y, float width, float height){
-        rect(x - width / 2f, y - height / 2f, width, height, 0);
-    }
-
-    public static void crect(float x, float y, float width, float height, int space){
-        rect(x - width / 2f, y - height / 2f, width, height, space);
+        rect(x - width/2, y - height/2, width, height, 0);
     }
 
     public static void stroke(float thick){

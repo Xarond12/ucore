@@ -1,20 +1,14 @@
 package io.anuke.ucore.scene.actions;
 
+import io.anuke.ucore.function.Callable;
 import io.anuke.ucore.scene.Action;
 
 public class CallAction extends Action{
-    public Runnable call;
-    public boolean called = false;
+    public Callable call;
 
     @Override
-    public boolean act(float delta){
-        if(!called) call.run();
-        called = true;
+    public boolean act(float delta) {
+        call.run();
         return true;
-    }
-
-    @Override
-    public void reset(){
-        called = false;
     }
 }
